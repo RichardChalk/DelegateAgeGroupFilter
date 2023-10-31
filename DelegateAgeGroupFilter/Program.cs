@@ -13,6 +13,7 @@ namespace DelegateAgeGroupFilter
 
             var people = new List<Person>() { p1, p2, p3, p4, p5 };
                         
+            // Display.IsChild är en delegate som innehåller metoden IsChild()
             Display.DisplayPeople("Barn", people, Display.IsChild);
             Display.DisplayPeople("Vuxna", people, Display.IsAdult);
             Display.DisplayPeople("Oldies", people, Display.IsPensioner);
